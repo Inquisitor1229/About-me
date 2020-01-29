@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        title About me 10.0
+        meta(charset = 'utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover")
+        meta(name="description" content="Одностраничный сайт-визитка")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        link(href="css/main.css" rel="stylesheet")
+        link(rel="icon" type="image/png" href="img/knight.png")
+    body
+        include ../components/header
+        main.main
+            h1 My Resume
+            include ../components/hero
+            include ../components/work
+            include ../components/about-me
+            include ../components/testimonial
+            include ../components/blog
+        include ../components/footer

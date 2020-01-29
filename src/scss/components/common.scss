@@ -1,0 +1,104 @@
+@import "variables.scss";
+
+.btn-container {
+  padding-right: 16px;
+  padding-bottom: 15px;
+}
+
+.btn {
+  display: block;
+  text-transform: uppercase;
+  border: 1px solid;
+  border-radius: 999px;
+  letter-spacing: 0.45px;
+  transition: all 0.6s ease;
+
+  >span {
+    transition: all 0.6s ease;
+  }
+
+  &--hire-me, &--my-resume{
+    padding-top: 18px;
+    padding-bottom: 14px;
+    letter-spacing: 0.7px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  &--hire-me {
+    padding-left: 47px;
+    padding-right: 45px;
+  }
+
+  &--my-resume {
+    padding-left: 26px;
+    padding-right: 28px;
+  }
+
+  &--bg-color:hover {
+    box-shadow: 3px 3px 10px #242424;
+    background-color: #242424;
+  }
+
+  &--bg-color:hover span {
+    color: white;
+  }
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+
+  >a {
+    flex-shrink: 0;
+  }
+
+  &__btn {
+    transition: all 0.4s ease;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  &__item {
+    >a, 
+    a>span {
+      text-decoration: none;
+      transition: all 0.5s ease;
+    }
+  }
+
+  &__elements {
+    display: flex;
+    align-items: center;
+
+    & li {
+      list-style: none;
+    }
+
+    & li:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .btn--hire-me, .btn--my-resume {
+    font-size: 15px;
+    padding: 12px 30px;
+  }
+}
+
+@media (min-width: 720px) {
+  .btn--bg-color-m:hover {
+    box-shadow: 3px 3px 10px #242424;
+    background-color: #242424;
+  }
+
+  .btn--bg-color-m:hover span {
+    color: white;
+  }
+}

@@ -1,0 +1,23 @@
+section#blogHREF.blog
+    h2.blog__title Read me
+    span.blog__subtitle Sometimes i write something smart
+    .blog__news.row
+        - let name = ["TEN THE BEST APP IN 2017", "WEBSITE INSPIRATION", "CHANGES IN SOCIAL MEDIA"]
+        - let date = [10, 15, 20]
+        - for (x = 0; x<3; x++)
+            .col-12.col-md-6.col-lg-4.blog__new
+                .blog__new-card
+                    a(href="#")
+                        .blog__new-img
+                            .blog__new-wrap
+                                img(src="https://source.unsplash.com/random/360x252" alt="New photo")
+                                .blog__new-date
+                                    span=date[x]
+                                        br
+                                        |june
+                    a(href="#").blog__new-title
+                        h3=name[x]
+                    span.blog__new-category CATEGORY
+                    p.blog__new-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque eu enim eget luctus. Sed augue felis, facilisis et elementum vitae, aliquam sit amet ante. Sed iaculis eros sem, elementum consequat.
+                    a(href="#").blog__new-link-more READ MORE
+    a(href="#").blog__link-more See more posts

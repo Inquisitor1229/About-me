@@ -1,0 +1,140 @@
+@import "variables.scss";
+
+.work {
+  margin: 40px auto 0;
+  padding: 0 15px;
+  width: 1271px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+      display: none;
+  }
+
+  &-menu {
+    align-self: center;
+
+    &__elements {
+      display: flex;
+      list-style: none;
+
+      & li {
+        margin-right: 33px;
+      }
+
+      & li:last-child {
+          margin-right: 0;
+      }
+
+      & a {
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s ease;
+      }
+
+      & span {
+        color: #6a696b;
+        font-weight: 500;
+        font-size: 12px;
+      }
+
+      & a:hover {
+        border-color: #6a6a6a;
+      }
+    }
+  }
+
+  &__projects {
+    margin-top: 35px;
+  }
+  
+  &__project {
+    display: flex;
+    padding: 0 15px;
+  }
+  
+  &__project-card {
+    width: 100%;
+    max-width: 370px;
+    margin: 0 auto 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px #242424;
+    overflow: hidden;
+    transition: all 0.4s ease;
+
+    &:hover {
+      box-shadow: 1px 1px 10px #242424;
+    }
+  }
+  
+  &__card-top {
+    position: relative;
+    padding: 81.084% 0 0;
+  }
+  
+  &__card-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ccc;
+  }
+  
+  &__card-bottom {
+    padding: 15px 20px 15px 12px;
+  }
+  
+  &__card-head span {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+    color: $main-black-color;
+  }
+  
+  &__card-body {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  
+  &__card-title, &__card-date {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: $main-black-color;
+    letter-spacing: 0.2px;
+    margin: 0;
+  }
+}
+
+.btn--work-more {
+  color: $main-black-color;
+  border: 2px solid $main-black-color;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  padding: 10px 10px;
+  margin-top: 10px;
+  align-self: center;
+}
+
+@media (max-width: 720px) {
+  .work {
+    margin-top: 20px;
+
+    &__projects {
+      margin-top: 20px;
+    }
+  }
+
+  .btn--work-more {
+    margin-top: 1px;
+  }
+}

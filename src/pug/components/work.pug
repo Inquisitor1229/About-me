@@ -1,0 +1,24 @@
+section#workHREF.work
+    h2.work__title My Works
+    nav.work-menu
+        ul.work-menu__elements
+            li: a(href="#"): span All
+            li: a(href="#"): span App
+            li: a(href="#"): span Website
+            li: a(href="#"): span Interaction
+    .work__projects.row
+        - for (let x = 0; x<9; x++)
+            .col-12.col-md-6.col-lg-4.work__project
+                a(href="#").work__project-card
+                    .work__card-top
+                        .work__card-wrap
+                            img(src="https://source.unsplash.com/random/370x300" alt="photo")
+                    .work__card-bottom
+                        .work__card-head
+                            span Category
+                        .work__card-body
+                            h3.work__card-title Project title
+                            .work__card-date
+                                span 2018
+    a(href="#").btn.btn--bg-color.btn--work-more
+        span Load more work
